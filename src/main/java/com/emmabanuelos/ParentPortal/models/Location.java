@@ -1,4 +1,9 @@
 package com.emmabanuelos.ParentPortal.models;
 
-public class Location {
+public class Location extends ParksField {
+
+    public Location(String value) {
+        super(value);
+    }
+
 }

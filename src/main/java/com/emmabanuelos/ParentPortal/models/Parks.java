@@ -2,6 +2,7 @@ package com.emmabanuelos.ParentPortal.models;
 
 import java.util.Objects;
 
+@Entity
 public class Parks {
     private int id;
     private static int nextId = 1;
@@ -59,7 +60,7 @@ public class Parks {
                 "Location: %s\n" +
                 "Difficulty: %s\n" +
                 "Trail Type: %s\n",
-                "Trail Distance: %s\n" id, name, trailName, location, difficulty, trailType, trailDistance);
+                "Trail Distance: %s\n", id, name, trailName, location, difficulty, trailType, trailDistance);
         return output;
     }
 
@@ -130,6 +131,12 @@ public class Parks {
 
     public void setTrailDistance(TrailDistance trailDistance) {
         this.trailDistance = trailDistance;
+    }
+
+
+
+    public Object getTrailType() {
+        return null;
     }
 }
 
