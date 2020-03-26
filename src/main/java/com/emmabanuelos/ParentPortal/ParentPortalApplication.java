@@ -13,15 +13,7 @@ public class ParentPortalApplication {
 		SpringApplication.run(ParentPortalApplication.class, args);
 	}
 
-	@Controller
-	public class HelloController {
 
-		@GetMapping
-		@ResponseBody
-		public String hello() {
-			return "Hello, World!" + " " +
-					"Follow me on Instagram @emmavsworld <3";
-		}
 
 	}
-}
+

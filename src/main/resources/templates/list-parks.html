@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org/">
+<head th:replace="fragments :: head">
+</head>
+<body>
+
+<div th:replace="fragments :: page-header"></div>
+
+<div class="container body-content">
+
+    <h1 th:text="${#strings.capitalizeWords(title)}"></h1>
+
+    <!--done TODO #1 - Use a loop to display park results in a table. -->
+
+    <table th:each="park : ${parks}" class = "park-listings">
+
+
+        <tr>
+            <td>ID: </td>
+            <td th:text="${park.id}"></td>
+        </tr>
+
+        <tr>
+            <td>Park: </td>
+            <td th:text="${park.name}"></td>
+        </tr>
+        <tr>
+            <td>Trail Name: </td>
+            <td th:text="${park.trail}"></td>
+        </tr>
+        <tr>
+            <td>Location: </td>
+            <td th:text="${park.location}"></td>
+        </tr>
+        <tr>
+            <td>Difficulty Level: </td>
+            <td th:text="${park.difficultyLevel}"></td>
+        </tr>
+        <tr>
+            <td>Trail Type: </td>
+            <td th:text="${park.trailType}"></td>
+        </tr>
+        <tr>
+            <td>Trail Distance: </td>
+            <td th:text="${Park.trailDistance}"></td>
+        </tr>
+        </tr>
+        <br><br>
+    </table>
+
+</div>
+
+</body>
+</html>
