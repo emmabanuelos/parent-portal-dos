@@ -1,34 +1,35 @@
 package com.emmabanuelos.ParentPortal.models;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import java.util.Objects;
 
 @Entity
 public class Parks {
+
+    @Id
+    @GeneratedValue
     private int id;
-    private static int nextId = 1;
+
 
     private String name;
-    private TrailName trailName;
-    private Location location;
-    private Difficulty difficulty;
-    private TrailType trailType;
-    private TrailDistance trailDistance;
+    private String location;
+    private int difficulty;
+
 
     // Initialize a unique ID.
     public Parks() {
-        id = nextId;
-        nextId++;
+
     }
 
     // Initialize the id and value fields.
-    public Parks(String aName, TrailName aTrailName, Location aLocation, Difficulty aDifficulty, TrailType aTrailType, TrailDistance trailDistance) {
+    public Parks(String aName, String aLocation, int aDifficulty) {
         this();
         name = aName;
-        trailName = aTrailName;
         location = aLocation;
         difficulty = aDifficulty;
-        trailType = aTrailType;
-        trailDistance =trailDistance;
+
     }
 
     // Custom toString method.
@@ -38,29 +39,17 @@ public class Parks {
         if (name.equals("")){
             name = "Data not available";
         }
-        if (trailName.getValue().equals("") || trailName.getValue() == null){
-            trailName.setValue("Data not available");
-        }
-        if (location.getValue().equals("") || location.getValue() == null){
-            location.setValue("Data not available");
-        }
-        if (difficulty.getValue().equals("") || difficulty.getValue() == null){
-            difficulty.setValue("Data not available");
-        }
-        if (trailType.getValue().equals("") || trailType.getValue() == null){
-            trailType.setValue("Data not available");
-        }
-        if (trailDistance.getValue().equals("") || trailDistance.getValue() == null){
-            trailDistance.setValue("Data not available");
+
+        if (location.equals("") || location == null){
+            location = "Data not available";
         }
 
-        output = String.format("\nID: %d\n" +
+
+
+        output = String.format(
                 "Name: %s\n" +
-                "Trail Name : %s\n" +
                 "Location: %s\n" +
-                "Difficulty: %s\n" +
-                "Trail Type: %s\n",
-                "Trail Distance: %s\n", id, name, trailName, location, difficulty, trailType, trailDistance);
+                "Difficulty: %s\n" ,  name, location, difficulty );
         return output;
     }
 
@@ -93,50 +82,20 @@ public class Parks {
         this.name = name;
     }
 
-    public TrailName getTrailName() {
-        return trailName;
-    }
-
-    public void setTrailName(TrailName trailName) {
-        this.trailName = trailName;
-    }
-
-    public Location getLocation() {
+    public String getLocation() {
         return location;
     }
 
-    public void setLocation(Location location) {
+    public void setLocation(String location) {
         this.location = location;
     }
 
-    public Difficulty getDifficulty() {
+    public int getDifficulty() {
         return difficulty;
     }
 
-    public void setDifficulty(Difficulty difficulty) {
+    public void setDifficulty(int difficulty) {
         this.difficulty = difficulty;
-    }
-
-    public TrailType getCoreCompetency() {
-        return trailType;
-    }
-
-    public void setTrailType(TrailType trailType) {
-        this.trailType = trailType;
-    }
-
-    public TrailDistance getTrailDistance() {
-        return trailDistance;
-    }
-
-    public void setTrailDistance(TrailDistance trailDistance) {
-        this.trailDistance = trailDistance;
-    }
-
-
-
-    public Object getTrailType() {
-        return null;
     }
 }
 
