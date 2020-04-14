@@ -21,7 +21,7 @@ public class ParksController {
     ParksRepository parksRepository;
 
     @GetMapping("add")
-    public String displayAddEmployerForm(Model model) {
+    public String displayAddParkForm(Model model) {
         model.addAttribute("park",new Parks());
         return "add";
     }
