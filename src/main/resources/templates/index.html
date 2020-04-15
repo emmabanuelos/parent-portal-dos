@@ -13,6 +13,18 @@
             <a th:href="@{'/' + ${action.key}}" th:text="${action.value}"></a>
         </li>
     </ul>
+
+</div>
+<div class= "motto">
+    <h3> Our motto: when your kids are bouncing off the walls, the best solution is to remove the walls.</h3>
+</div>
+
+<div>
+<!--    <img src="<c:url value="/resources/project-photos/IMG_1213.jpg" />-->
+    <img src="images/IMG_1213.jpg">
+    <img src="/src/main/resources/images/IMG_1213.jpg">
+<!--    <img src="${pageContext.request.contextPath}/src/main/resources/images/IMG_1213.jpg">-->
+    <img src="${pageContext.request.contextPath}/resources/images/IMG_1213.jpg" alt = "On Top of the World" />
 </div>
 
 </body>
