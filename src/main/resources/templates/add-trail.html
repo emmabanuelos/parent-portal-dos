@@ -2,28 +2,29 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org/">
 <head th:replace="fragments :: head"></head>
 <body class="container  body-content">
-<h1>Add a Park</h1>
+<h1>Add a Trail</h1>
 
 <nav th:replace="fragments :: page-header"></nav>
 
 <form method="post" style="max-width:600px;">
+
     <div class="form-group">
         <label th:for="name">Trail Name</label>
         <input class="form-control" th:field="${trail.name}" />
-        <span th:errors="${park.name}" class="error"></span>
+        <span th:errors="${trail.name}" class="error"></span>
     </div>
 
 
     <div class="form-group">
         <label th:for="location">Trail Location</label>
         <input class="form-control" th:field="${trail.location}" />
-        <span th:errors="${park.location}" class="error"></span>
+        <span th:errors="${trail.location}" class="error"></span>
     </div>
 
     <div class="form-group">
         <label th:for="difficulty">Trail Difficulty</label>
         <input class="form-control" th:field="${trail.difficulty}" />
-        <span th:errors="${park.difficulty}" class="error"></span>
+        <span th:errors="${trail.difficulty}" class="error"></span>
     </div>
 
     <input type="submit" value="Add Trail" />
