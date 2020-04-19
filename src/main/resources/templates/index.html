@@ -15,16 +15,16 @@
     </ul>
 
 </div>
-<div class= "motto">
-    <h3> Our motto: when your kids are bouncing off the walls, the best solution is to remove the walls.</h3>
-</div>
+
+
+    <h2> Our motto: when your kids are bouncing off the walls,<br> the best solution is to remove the walls.</h2>
+
 
 <div>
-<!--    <img src="<c:url value="/resources/project-photos/IMG_1213.jpg" />-->
-    <img src="images/IMG_1213.jpg">
-    <img src="/src/main/resources/images/IMG_1213.jpg">
-<!--    <img src="${pageContext.request.contextPath}/src/main/resources/images/IMG_1213.jpg">-->
-    <img src="${pageContext.request.contextPath}/resources/images/IMG_1213.jpg" alt = "On Top of the World" />
+<!--    <img src="images/IMG_1213.jpg"> -->
+<!--    this code works for the images too-->
+    <img id = "luella-main" src="/images/IMG_1213.jpg" th:src = "@{/images/IMG_1213.jpg}"/>
+    <img id = "Luella-tree" src="/images/IMG_1193.jpg" th:src = "@{/images/IMG_1193.jpg}"/>
 </div>
 
 </body>

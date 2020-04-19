@@ -6,6 +6,26 @@ td, th {
     padding: 10px;
 }
 
+luella-main {
+    width: 250px;
+    height: 150px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  float: left;
+  padding: 10px;
+  border-radius: 25%;
+}
+
+ .motto {
+    padding: 10px;
+    text-align: center;
+    font-color: "green";
+}
+
 th {
     text-align: center;
 }

@@ -13,6 +13,7 @@
         <span th:errors="${park.name}" class="error"></span>
     </div>
 
+
     <div class="form-group">
         <label th:for="location">Park Location</label>
         <input class="form-control" th:field="${park.location}" />
@@ -20,7 +21,7 @@
     </div>
 
     <div class="form-group">
-        <label th:for="difficulty">Park Difficulty</label>
+        <label th:for="difficulty">Trail Difficulty</label>
         <input class="form-control" th:field="${park.difficulty}" />
         <span th:errors="${park.difficulty}" class="error"></span>
     </div>
