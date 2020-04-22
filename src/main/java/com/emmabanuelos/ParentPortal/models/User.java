@@ -5,6 +5,8 @@ import org.dom4j.tree.AbstractEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 @Entity
 public class User extends AbstractEntity {
@@ -13,6 +15,9 @@ public class User extends AbstractEntity {
 
     @NotNull
     private String pwHash;
+
+    @Id
+    @GeneratedValue
     private int id;
 
     public User() {}
