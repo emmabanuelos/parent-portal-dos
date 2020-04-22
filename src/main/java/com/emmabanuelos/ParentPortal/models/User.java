@@ -32,8 +32,8 @@ public class User extends AbstractEntity {
         return encoder.matches(password, pwHash);
     }
 
-//
-//    public Object getId() {
-//    return id;
-//    }
+
+    public int getId() {
+    return (int) id;
+    }
 }
