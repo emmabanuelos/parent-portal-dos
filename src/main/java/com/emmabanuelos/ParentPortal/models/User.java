@@ -34,6 +34,6 @@ public class User extends AbstractEntity {
 
 
     public int getId() {
-    return (int) id;
+    return id;
     }
 }
