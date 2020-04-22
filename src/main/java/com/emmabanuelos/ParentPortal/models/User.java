@@ -13,7 +13,7 @@ public class User extends AbstractEntity {
 
     @NotNull
     private String pwHash;
-    private Object id;
+    private int id;
 
     public User() {}
 
