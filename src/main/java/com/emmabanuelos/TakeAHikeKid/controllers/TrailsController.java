@@ -1,7 +1,7 @@
-package com.emmabanuelos.ParentPortal.controllers;
+package com.emmabanuelos.TakeAHikeKid.controllers;
 
-import com.emmabanuelos.ParentPortal.data.TrailRepository;
-import com.emmabanuelos.ParentPortal.models.Trail;
+import com.emmabanuelos.TakeAHikeKid.data.TrailRepository;
+import com.emmabanuelos.TakeAHikeKid.models.Trail;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;

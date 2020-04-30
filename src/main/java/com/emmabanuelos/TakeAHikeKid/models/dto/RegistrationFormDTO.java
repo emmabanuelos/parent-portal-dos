@@ -1,4 +1,4 @@
-package com.emmabanuelos.ParentPortal.models.dto;
+package com.emmabanuelos.TakeAHikeKid.models.dto;
 
 public class RegistrationFormDTO extends LoginFormDTO {
     private String verifyPassword;

@@ -1,4 +1,4 @@
-package com.emmabanuelos.ParentPortal;
+package com.emmabanuelos.TakeAHikeKid;
 
 
 import java.util.Comparator;

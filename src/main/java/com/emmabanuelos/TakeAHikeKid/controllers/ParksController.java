@@ -1,7 +1,7 @@
-package com.emmabanuelos.ParentPortal.controllers;
+package com.emmabanuelos.TakeAHikeKid.controllers;
 
-import com.emmabanuelos.ParentPortal.data.ParksRepository;
-import com.emmabanuelos.ParentPortal.models.Parks;
+import com.emmabanuelos.TakeAHikeKid.data.ParksRepository;
+import com.emmabanuelos.TakeAHikeKid.models.Parks;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

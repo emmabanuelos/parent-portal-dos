@@ -1,6 +1,6 @@
-package com.emmabanuelos.ParentPortal.data;
+package com.emmabanuelos.TakeAHikeKid.data;
 
-import com.emmabanuelos.ParentPortal.models.Parks;
+import com.emmabanuelos.TakeAHikeKid.models.Parks;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,4 +1,4 @@
-package com.emmabanuelos.ParentPortal.controllers;
+package com.emmabanuelos.TakeAHikeKid.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

@@ -1,4 +1,4 @@
-package com.emmabanuelos.ParentPortal.models;
+package com.emmabanuelos.TakeAHikeKid.models;
 
 import com.sun.istack.NotNull;
 import org.dom4j.tree.AbstractEntity;

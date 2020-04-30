@@ -1,6 +1,6 @@
-package com.emmabanuelos.ParentPortal.data;
+package com.emmabanuelos.TakeAHikeKid.data;
 
-import com.emmabanuelos.ParentPortal.models.User;
+import com.emmabanuelos.TakeAHikeKid.models.User;
 import org.springframework.data.repository.CrudRepository;
 
 

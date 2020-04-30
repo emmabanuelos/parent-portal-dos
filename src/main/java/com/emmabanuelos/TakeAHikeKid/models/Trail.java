@@ -1,4 +1,4 @@
-package com.emmabanuelos.ParentPortal.models;
+package com.emmabanuelos.TakeAHikeKid.models;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

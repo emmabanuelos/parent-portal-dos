@@ -1,8 +1,8 @@
-package com.emmabanuelos.ParentPortal.controllers;
+package com.emmabanuelos.TakeAHikeKid.controllers;
 
-import com.emmabanuelos.ParentPortal.data.UserRepository;
-import com.emmabanuelos.ParentPortal.models.User;
-import com.emmabanuelos.ParentPortal.models.dto.RegistrationFormDTO;
+import com.emmabanuelos.TakeAHikeKid.data.UserRepository;
+import com.emmabanuelos.TakeAHikeKid.models.User;
+import com.emmabanuelos.TakeAHikeKid.models.dto.RegistrationFormDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

@@ -1,9 +1,9 @@
-package com.emmabanuelos.ParentPortal.controllers;
+package com.emmabanuelos.TakeAHikeKid.controllers;
 
-import com.emmabanuelos.ParentPortal.data.ParksData;
-import com.emmabanuelos.ParentPortal.data.ParksRepository;
-import com.emmabanuelos.ParentPortal.data.TrailRepository;
-import com.emmabanuelos.ParentPortal.models.Parks;
+import com.emmabanuelos.TakeAHikeKid.data.ParksData;
+import com.emmabanuelos.TakeAHikeKid.data.ParksRepository;
+import com.emmabanuelos.TakeAHikeKid.data.TrailRepository;
+import com.emmabanuelos.TakeAHikeKid.models.Parks;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
