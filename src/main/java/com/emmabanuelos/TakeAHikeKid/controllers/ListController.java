@@ -5,12 +5,15 @@ import com.emmabanuelos.TakeAHikeKid.data.ParksRepository;
 import com.emmabanuelos.TakeAHikeKid.data.TrailRepository;
 import com.emmabanuelos.TakeAHikeKid.models.Parks;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.HashMap;
 
+@Controller
+@RequestMapping("list")
 public class ListController {
     @Autowired
     private ParksRepository parksRepository;
@@ -31,7 +34,7 @@ public class ListController {
 
     }
 
-    @RequestMapping("")
+    @RequestMapping("list")
     public String list(Model model) {
         model.addAttribute("parks", parksRepository.findAll());
         model.addAttribute("trail", trailRepository.findAll());
