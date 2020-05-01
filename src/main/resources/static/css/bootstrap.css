@@ -1088,6 +1088,7 @@ body {
   line-height: 1.42857143;
   color: #c30cc1;
   background-color: #6ec18a;
+  text-align: center;
 }
 input,
 button,
@@ -1100,6 +1101,7 @@ textarea {
 a {
   color: #337ab7;
   text-decoration: none;
+  text-align: center;
 }
 a:hover,
 a:focus {
@@ -1270,10 +1272,12 @@ h1,
 h2,
 .h2 {
   font-size: 30px;
+
 }
 h3,
 .h3 {
   font-size: 24px;
+  text-align: center;
 }
 h4,
 .h4 {
