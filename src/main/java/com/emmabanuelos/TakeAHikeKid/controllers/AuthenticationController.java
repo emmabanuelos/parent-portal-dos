@@ -19,7 +19,7 @@ import javax.validation.Valid;
 import java.util.Optional;
 
 @Controller
-@RequestMapping("/login")
+@RequestMapping("/register")
 public class AuthenticationController {
     @Autowired
     UserRepository userRepository;
@@ -82,12 +82,12 @@ public class AuthenticationController {
         userRepository.save(newUser);
         setUserInSession(request.getSession(), newUser);
 
-        return "redirect:";
+        return "redirect:/login";
     }
 
 
     @GetMapping("/login")
-//    @RequestMapping("/login")
+    @RequestMapping("/login")
     public String displayLoginForm(Model model) {
         model.addAttribute(new LoginFormDTO());
         model.addAttribute("title", "Log In");
@@ -128,6 +128,6 @@ public class AuthenticationController {
     @GetMapping("/logout")
     public String logout(HttpServletRequest request) {
         request.getSession().invalidate();
-        return "redirect: ";
+        return "redirect:/index";
     }
 }
