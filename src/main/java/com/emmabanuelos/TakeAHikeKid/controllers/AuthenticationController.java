@@ -8,10 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -20,6 +17,8 @@ import java.util.Optional;
 
 @Controller
 @RequestMapping("/register")
+//@RequestMapping("/login")
+
 public class AuthenticationController {
     @Autowired
     UserRepository userRepository;
@@ -88,13 +87,14 @@ public class AuthenticationController {
 
     @GetMapping("/login")
     @RequestMapping("/login")
+//    @ResponseBody
     public String displayLoginForm(Model model) {
         model.addAttribute(new LoginFormDTO());
         model.addAttribute("title", "Log In");
         return "login";
     }
 
-    @PostMapping("/login")
+    @PostMapping("login")
     public String processLoginForm(@ModelAttribute @Valid LoginFormDTO loginFormDTO,
                                    Errors errors, HttpServletRequest request,
                                    Model model) {
@@ -125,7 +125,7 @@ public class AuthenticationController {
         return "redirect:";
     }
 
-    @GetMapping("/logout")
+    @GetMapping("logout")
     public String logout(HttpServletRequest request) {
         request.getSession().invalidate();
         return "redirect:/index";
