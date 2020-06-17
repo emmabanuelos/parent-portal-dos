@@ -16,15 +16,15 @@
 
 
     <div class="form-group">
-        <label th:for="location">Trail Location</label>
-        <input class="form-control" th:field="${trail.location}" />
-        <span th:errors="${trail.location}" class="error"></span>
+        <label th:for="location">Trail Distance</label>
+        <input class="form-control" th:field="${trail.distance}" />
+        <span th:errors="${trail.distance}" class="error"></span>
     </div>
 
     <div class="form-group">
-        <label th:for="difficulty">Trail Difficulty</label>
-        <input class="form-control" th:field="${trail.difficulty}" />
-        <span th:errors="${trail.difficulty}" class="error"></span>
+        <label th:for="difficulty">Trail Type</label>
+        <input class="form-control" th:field="${trail.type}" />
+        <span th:errors="${trail.type}" class="error"></span>
     </div>
 
     <input type="submit" value="Add Trail" />
